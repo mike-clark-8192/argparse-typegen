@@ -1,0 +1,26 @@
+[project]
+name = "argparse-typegen"
+version = "0.1.0"
+description = "Generate typed namespaces for Python argparse."
+authors = [
+    {name = "Mike Clark", email = "mike.clark.8192@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+argparse-typegen = "argparse_typegen.__main__:main"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy>=1.10.0",
+]
