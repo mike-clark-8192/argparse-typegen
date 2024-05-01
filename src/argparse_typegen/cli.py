@@ -9,7 +9,7 @@ def main(argv=sys.argv[1:]):
     parser = cli_args.build_argparser()
     args = parser.parse_args(argv, namespace=cli_args.ArgsNamespace())
     if args.path:
-        sys.path.extend(args.path)
+        sys.path = args.path + sys.path
     getter = args.getter
     their_parser = execeval.execeval(getter)
     if not isinstance(their_parser, argparse.ArgumentParser):
