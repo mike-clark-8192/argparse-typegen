@@ -1,7 +1,7 @@
 [project]
 name = "argparse-typegen"
 version = "0.1.0"
-description = "Generate typed namespaces for Python argparse."
+description = "Typed namespace code generator for Python argparse.ArgumentParser instances."
 authors = [
     {name = "Mike Clark", email = "mike.clark.8192@gmail.com"},
 ]
